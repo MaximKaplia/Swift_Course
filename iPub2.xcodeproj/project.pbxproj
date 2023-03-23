@@ -13,6 +13,8 @@
 		CE7778D829BE17970016DDFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7778D629BE17970016DDFD /* Main.storyboard */; };
 		CE7778DA29BE17980016DDFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7778D929BE17980016DDFD /* Assets.xcassets */; };
 		CE7778DD29BE17980016DDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7778DB29BE17980016DDFD /* LaunchScreen.storyboard */; };
+		CEA8401329BF530E0069A09C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8401229BF530E0069A09C /* Manager.swift */; };
+		CEA8401629BF53C10069A09C /* Brews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8401529BF53C10069A09C /* Brews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE7778D929BE17980016DDFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7778DC29BE17980016DDFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7778DE29BE17980016DDFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA8401229BF530E0069A09C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		CEA8401529BF53C10069A09C /* Brews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CE7778D929BE17980016DDFD /* Assets.xcassets */,
 				CE7778DB29BE17980016DDFD /* LaunchScreen.storyboard */,
 				CE7778DE29BE17980016DDFD /* Info.plist */,
+				CEA8401229BF530E0069A09C /* Manager.swift */,
+				CEA8401529BF53C10069A09C /* Brews.swift */,
 			);
 			path = iPub2;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7778D529BE17970016DDFD /* ViewController.swift in Sources */,
+				CEA8401629BF53C10069A09C /* Brews.swift in Sources */,
 				CE7778D129BE17970016DDFD /* AppDelegate.swift in Sources */,
 				CE7778D329BE17970016DDFD /* SceneDelegate.swift in Sources */,
+				CEA8401329BF530E0069A09C /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kapli.iPub2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,6 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kapli.iPub2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
